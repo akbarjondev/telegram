@@ -1,0 +1,23 @@
+.navbar__button {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: contain;
+
+	&--search {
+		background-image: url("../img/icon-search.svg");
+	}
+	&--more {
+		background-image: url("../img/icon-more.svg");
+	}
+	&--expand {
+		background-image: url("../img/icon-expand.svg");
+	}
+}

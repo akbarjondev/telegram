@@ -1,0 +1,33 @@
+//chatlarga beforiga icon qo'yadi
+@mixin paste-icon($chat_type, $img_url) {
+	.chat-link__name[class*="--#{$chat_type}"] {
+		&::before {
+			flex-shrink: 0;
+			content: "";
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			background-image: url($img_url);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: cover;
+		}
+	}
+}
+
+//chatlarga afteriga icon qo'yadi
+@mixin paste-icon-after($chat_type, $img_url) {
+	.chat-link__name[class*="--#{$chat_type}"] {
+		&::after {
+			flex-shrink: 0;
+			content: "";
+			width: 20px;
+			height: 20px;
+			margin-left: 5px;
+			background-image: url($img_url);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: cover;
+		}
+	}
+}
