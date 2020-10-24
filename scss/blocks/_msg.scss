@@ -1,0 +1,18 @@
+.msg__file {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	border: none;
+	background-image: url("../img/icon-attach.svg");
+
+	&--mic {
+		background-image: url("../img/icon-mic.svg");
+	}
+}
+
+.msg__form-group input {
+	border: none;
+	margin-left: 15px;
+	margin-right: 15px;
+}

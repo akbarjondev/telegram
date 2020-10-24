@@ -201,8 +201,12 @@
 			  </div><!-- End of navigation__bottom -->
   		</div><!-- End of navigation -->
 
-  		<div class="col-6 sitebody">
+  		<div class="col-6 sitebody d-flex flex-column">
   			<nav class="navbar navbar-light bg-light rounded">
+  				<div class="navbar__inner">
+	  				<div class="navbar__heading h6 m-0">Fullstack2 - Kichik guruh</div>
+  					<div class="navbar__members"><small class="text-secondary">3 members</small></div>
+  				</div>
 				  <ul class="navbar-nav ml-auto d-flex flex-row">
 			      <li class="nav-item">
 			        <button class="navbar__button navbar__button--search" type="button" aria-label="search from chat"></button>
@@ -215,6 +219,22 @@
 			      </li>  
 			    </ul>
 				</nav>
+
+				<div class="sitebody__center flex-grow-1">
+					<!-- chat shu yerda yoziladi -->
+				</div><!-- End of sitebody__center -->
+
+				<div class="sitebody__bottom msg row align-items-center">
+					<button class="msg__file" type="button" aria-label="File"></button>
+					
+					<div class="msg__form-group form-group m-0 flex-grow-1">
+				    <input class="form-control"  id="msg__emoji" aria-label="Message here" type="email" id="exampleFormControlInput1" placeholder="Write a message...">
+				  </div>
+				  
+				  <div class="msg__emoji"></div>
+
+					<button class="msg__file msg__file--mic" type="button" aria-label="Listen"></button>
+				</div>
   		</div><!-- End of sitebody -->
 
   		<div class="col-3 emoji border-left">
@@ -235,6 +255,10 @@
 			$("#emojiBox").emojioneArea({
 				pickerPosition: "bottom",
 				useInternalCDN: true
+			});
+
+			$("#msg__emoji").emojioneArea({
+				// standalone: true
 			});
 		});
 	</script>
